@@ -29,7 +29,7 @@ public class BattleShip {
 		controller.start();
 	}
 
-	static void readInputParams() {
+	static boolean readInputParams() throws IllegalArgumentException {
 		try (Scanner sc = new Scanner(System.in)) {
 
 			String battleFieldArea = sc.nextLine();
@@ -47,11 +47,12 @@ public class BattleShip {
 			parse(InputType.MISSILE, missileAttemps[0], PlayerCache.PLAYER1);
 			missileAttemps[1] = sc.nextLine();
 			parse(InputType.MISSILE, missileAttemps[1], PlayerCache.PLAYER2);
-
+			return true;
 		}
 		catch (IllegalArgumentException ex) {
 			throw ex;
 		}
+
 	}
 
 	public static void parse(InputType type, String... argument)
