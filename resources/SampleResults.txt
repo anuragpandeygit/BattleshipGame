@@ -1,0 +1,66 @@
+************* Test Data *********************
+
+Scenario 1 : Player 2 Wins ( Example problem)
+
+5 E
+2
+Q 1 1 A1 B2
+P 2 1 D4 C3
+A1 B2 B2 B3
+A1 B2 B3 A1 D1 E1 D4 D4 D5 D5
+
+Scenario 2 : Peace Declared 
+
+5 E
+2
+Q 2 1 C1 D4
+P 2 1 E3 A1
+B4 A1 A1 D4 D4 D5 D5 C1
+C1 C1 C2 C2 C5 D1 E4 E5
+
+Scenario 3 : Player 2 Wins
+
+5 E
+2
+Q 2 1 C1 D4
+P 2 1 E3 A1
+B4 A1 A1 D4 D4 D5 D5 C1
+C1 C1 C2 C2 C5 D1 E3 E4
+
+Scenario 4 : Player 1 wins, more than 3 ships 
+
+7 H
+3
+Q 1 1 A6 A5
+P 4 1 E3 F4
+P 1 2 B1 G3
+A4 A5 A5 H3 G3 F4 F5 F6 F7
+A6 A6 F1
+
+Scenario 5 : Peace , heterogeneous play field, player fires out of battle area.
+7 A
+2
+Q 1 1 A6 A1
+P 1 1 A5 A3
+A1 A2
+B1
+
+
+Scenario 6 : Wrong Initialization 
+0 A
+2
+Q 1 1 A6 A1
+P 1 1 A5 A3
+A1 A2
+B1
+
+Scenario 7 : Wrong Initialization 
+3 $
+2
+Q 1 1 A6 A1
+P 1 1 A5 A3
+A1 A2
+B1
+
+
+
